@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1 style="color:#ffff;"><i>welcome to my page</h1>
+</head>
+<body>
+    <div class="loginpage">    
+        <img src="DK.jpg" class="avatar" >
+        <h2><i>"login here"</i></h2>
+        <form>
+            <p>
+                username
+            </p>
+            <input type="text" id="usname" placeholder="ENTER USERNAME">
+            <p><i>password</i>></p><div>
+            <input type="password" id="pwd" placeholder="ENTER PASSWORD"><div>
+            <input type="SUBMIT" onclick="login()" value="LOGIN"><div>
+                <a id="ok" href="https://en.wikipedia.org/wiki/Sports_car" ></a>
+            <a href="https://ksrce.ac.in/"> Reset Your Password</a><br>
+            <a href="#">Don't Have An Account!</a>
+        </form>
+        <script>
+            function login(){
+                let a=document.getElementById("usname").value;
+                if(a!=null){
+                    alert("welcome to DK website");
+                    document.getElementById("ok").innerHTML="click";
+                }
+                else{
+                    alert(" Your passcode is wrong!!!!")
+                }
+            }
+        </script>
+    </div>
+   
+</body>
+</html>
